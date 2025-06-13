@@ -3,23 +3,39 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 to-orange-100 overflow-hidden">
-      {/* Decorative Star */}
-      <div className="absolute top-20 right-20 opacity-20 animate-pulse">
+      {/* Background Rectangle */}
+      <div className="absolute top-0 left-0 w-full h-full opacity-5">
+        <img
+          src="https://cdn.poehali.dev/files/f90b8f2d-5b36-4d18-b838-4b2f7e1f0a8d.png"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Decorative Stars */}
+      <div className="absolute top-20 right-20 opacity-30 animate-pulse">
         <img
           src="https://cdn.poehali.dev/files/095d64f8-f610-488f-bc87-6b9f16a4d871.png"
-          alt="Decorative star"
-          className="w-32 h-32"
+          alt=""
+          className="w-24 h-24"
+        />
+      </div>
+      <div className="absolute bottom-32 left-16 opacity-20 animate-pulse">
+        <img
+          src="https://cdn.poehali.dev/files/d7f4f8a2-8b3e-4c9f-a1d2-3e5f6a7b8c9d.png"
+          alt=""
+          className="w-16 h-16"
         />
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
-          {/* Star decoration */}
+        <div className="max-w-6xl mx-auto">
+          {/* Main Logo */}
           <div className="flex justify-center mb-8">
             <img
-              src="https://cdn.poehali.dev/files/095d64f8-f610-488f-bc87-6b9f16a4d871.png"
-              alt="Акварель логотип"
-              className="w-20 h-20 animate-fade-in"
+              src="https://cdn.poehali.dev/files/6a2b4f91-3c5d-4e7f-8a9b-1c2d3e4f5a6b.png"
+              alt="Школа рисования Акварель"
+              className="w-32 h-32 animate-fade-in"
             />
           </div>
 
@@ -47,6 +63,26 @@ const HeroSection = () => {
             >
               Наши работы
             </Button>
+          </div>
+
+          {/* Gallery Preview */}
+          <div className="flex justify-center gap-8 mb-12">
+            <div className="relative group">
+              <img
+                src="https://cdn.poehali.dev/files/2a8f4b1e-5c9d-4f7a-8b3e-1d2c3f4a5b6c.png"
+                alt="Работы учеников"
+                className="w-48 h-32 object-cover rounded-2xl shadow-lg group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-amber-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div className="relative group">
+              <img
+                src="https://cdn.poehali.dev/files/7e3f8a2d-9b4c-4e6f-8a1d-2c3f4a5b6c7d.png"
+                alt="Работы учеников"
+                className="w-48 h-32 object-cover rounded-2xl shadow-lg group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-amber-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
