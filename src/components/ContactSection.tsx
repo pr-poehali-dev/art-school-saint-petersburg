@@ -26,13 +26,19 @@ const ContactSection = () => {
           src="https://cdn.poehali.dev/files/095d64f8-f610-488f-bc87-6b9f16a4d871.png"
           alt=""
           className="w-24 h-24"
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+          }}
         />
       </div>
       <div className="absolute bottom-10 right-10 opacity-10">
         <img
-          src="https://cdn.poehali.dev/files/095d64f8-f610-488f-bc87-6b9f16a4d871.png"
+          src="https://cdn.poehali.dev/files/7c3bcb22-11f3-4319-9bad-1677416f8519.png"
           alt=""
           className="w-16 h-16"
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+          }}
         />
       </div>
 
@@ -132,6 +138,9 @@ const ContactSection = () => {
               src="https://cdn.poehali.dev/files/095d64f8-f610-488f-bc87-6b9f16a4d871.png"
               alt="Акварель"
               className="w-16 h-16 opacity-60"
+              onError={(e) => {
+                e.currentTarget.style.display = "none";
+              }}
             />
           </div>
           <p className="text-gray-600 text-lg">

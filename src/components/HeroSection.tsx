@@ -6,25 +6,34 @@ const HeroSection = () => {
       {/* Background Rectangle */}
       <div className="absolute top-0 left-0 w-full h-full opacity-5">
         <img
-          src="https://cdn.poehali.dev/files/f90b8f2d-5b36-4d18-b838-4b2f7e1f0a8d.png"
+          src="https://cdn.poehali.dev/files/8b08cf6b-b2d5-4322-80ee-b046fd7f5c8e.png"
           alt=""
           className="w-full h-full object-cover"
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+          }}
         />
       </div>
 
       {/* Decorative Stars */}
       <div className="absolute top-20 right-20 opacity-30 animate-pulse">
         <img
-          src="https://cdn.poehali.dev/files/095d64f8-f610-488f-bc87-6b9f16a4d871.png"
+          src="https://cdn.poehali.dev/files/7c3bcb22-11f3-4319-9bad-1677416f8519.png"
           alt=""
           className="w-24 h-24"
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+          }}
         />
       </div>
       <div className="absolute bottom-32 left-16 opacity-20 animate-pulse">
         <img
-          src="https://cdn.poehali.dev/files/d7f4f8a2-8b3e-4c9f-a1d2-3e5f6a7b8c9d.png"
+          src="https://cdn.poehali.dev/files/095d64f8-f610-488f-bc87-6b9f16a4d871.png"
           alt=""
           className="w-16 h-16"
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+          }}
         />
       </div>
 
@@ -33,9 +42,12 @@ const HeroSection = () => {
           {/* Main Logo */}
           <div className="flex justify-center mb-8">
             <img
-              src="https://cdn.poehali.dev/files/6a2b4f91-3c5d-4e7f-8a9b-1c2d3e4f5a6b.png"
+              src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=128&h=128&fit=crop&crop=center"
               alt="Школа рисования Акварель"
-              className="w-32 h-32 animate-fade-in"
+              className="w-32 h-32 animate-fade-in rounded-full"
+              onError={(e) => {
+                e.currentTarget.style.display = "none";
+              }}
             />
           </div>
 
@@ -69,17 +81,23 @@ const HeroSection = () => {
           <div className="flex justify-center gap-8 mb-12">
             <div className="relative group">
               <img
-                src="https://cdn.poehali.dev/files/2a8f4b1e-5c9d-4f7a-8b3e-1d2c3f4a5b6c.png"
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=200&h=130&fit=crop&crop=center"
                 alt="Работы учеников"
                 className="w-48 h-32 object-cover rounded-2xl shadow-lg group-hover:scale-105 transition-transform duration-300"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
               />
               <div className="absolute inset-0 bg-amber-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="relative group">
               <img
-                src="https://cdn.poehali.dev/files/7e3f8a2d-9b4c-4e6f-8a1d-2c3f4a5b6c7d.png"
+                src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=200&h=130&fit=crop&crop=center"
                 alt="Работы учеников"
                 className="w-48 h-32 object-cover rounded-2xl shadow-lg group-hover:scale-105 transition-transform duration-300"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
               />
               <div className="absolute inset-0 bg-amber-600/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
